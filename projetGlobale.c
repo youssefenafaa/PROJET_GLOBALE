@@ -165,7 +165,7 @@ void recherche_produit(){
      scanf("%s",n_recherche);
          for ( int i = 0; i <NB_PRODUITS ; i++)
             {
-                 if (strcmp(catalogue[i].nom,n_recherche)==0){
+                 if (strcasecmp(catalogue[i].nom,n_recherche)==0){
                     
                  printf("%d | %s | %s | %.2f | stock:%d \n %s\n",
                  catalogue[i].idProduit,catalogue[i].nom,catalogue[i].categorie,
